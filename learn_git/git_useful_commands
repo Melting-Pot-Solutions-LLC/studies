@@ -1,5 +1,23 @@
-//to create a git a repository in an empty directory
+// to create a git a repository in an empty directory
 git init
 
-//add files or directories to the stage area
-git add filename.txt
+//tie the local repository to the remote repository
+git remote add origin https://...
+
+// add files or directories to the staging area
+git add filename.txt directory_name
+
+// see what is going to be commited
+git status
+
+//after adding the files to the staging area we can change the files and see the difference bw the staging area and files we changed
+git diff
+
+//commit changes to the local repository
+git commit -m "message"
+
+//see the history of commits
+git log
+
+//commit to the remote repository
+git push [origin master]
