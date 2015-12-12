@@ -1,0 +1,5 @@
+//to create a git a repository in an empty directory
+git init
+
+//add files or directories to the stage area
+git add filename.txt
