@@ -21,3 +21,7 @@ git log
 
 //commit to the remote repository
 git push [origin master]
+
+//after git command
+//display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+git show HEAD
