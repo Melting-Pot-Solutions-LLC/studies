@@ -39,3 +39,23 @@ git reset HEAD filename
 //rewind to the part before you made the wrong turn and create a new 
 /destiny for the project. 
 git reset 5d69206
+ 
+//find out what branch you are on
+git branch
+
+//create a new branch but stay ont the previous one
+git branch branch_name
+
+//switch to new branch
+git checkout branch_name
+
+//add changes from another branch to the current cbranch
+git merge new_branch
+
+//delete a branch
+git branch -d branch_name
+
+//show all the branches
+git branch -a
+
+
