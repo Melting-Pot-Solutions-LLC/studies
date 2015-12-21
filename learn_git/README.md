@@ -1,10 +1,10 @@
 <h1>GIT WORKFLOW:</h1>
 <p> <ol>
-<li>Fetch and merge changes from the remote</li>
-<li>Create a branch to work on a new project feature</li>
-<li>Develop the feature on your branch and commit your work</li>
-<li>Fetch and merge from the remote again (in case new commits were made while you were working)</li>
-<li>Push your branch up to the remote for review</li>
+<li>Fetch and merge changes from the remote;</li>
+<li>Create a branch to work on a new project feature;</li>
+<li>Develop the feature on your branch and commit your work;</li>
+<li>Fetch and merge from the remote again (in case new commits were made while you were working);</li>
+<li>Push your branch up to the remote for review;</li>
 </ol> </p>
 
 
