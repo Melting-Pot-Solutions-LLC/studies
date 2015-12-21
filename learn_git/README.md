@@ -45,16 +45,16 @@
 <h3>switch to new branch:</h3>
 <code>git checkout branch_name<code>
 
-<h3>//add changes from another branch to the current branch:</h3>
+<h3>add changes from another branch to the current branch:</h3>
 <code>git merge new_branch</code>
 
-<h3>//delete a branch:</h3>
+<h3>delete a branch:</h3>
 <code>git branch -d branch_name</code>
 
-<h3>//show all the branches:</h3>
+<h3>show all the branches:</h3>
 <code>git branch -a</code>
 
-<h3>//find out informaiton about all remote:</h3>
+<h3>find out informaiton about all remote:</h3>
 <code>git remote -v</code>
 
 /*
