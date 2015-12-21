@@ -11,8 +11,6 @@
 
 <h1> THE MOST FREQUENTLY USED GIT COMMANDS ARE:<h1>
 
-
-
 <h3>to create a git a repository in an empty directory:</h3>
 <code>git init</code>
 
