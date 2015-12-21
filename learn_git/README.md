@@ -1,10 +1,10 @@
 <h1> the most frequnelty used gut commmands are:<h1>
 
 <h3>to create a git a repository in an empty directory:</h3>
-<p>git init</p>
+<code>git init</code>
 
 <h3>tie the local repository to the remote repository:</h3>
-<p>git remote add origin https://..</p>
+<code>git remote add origin https://..</code>
 
 <h3>add files or directories to the staging area:</h3>
 <p>git add filename.txt directory_name</p>
@@ -55,7 +55,7 @@
 <p>git branch -a<p>
 
 <h3>//find out informaiton about all remote:<h3>
-<p>git remote -v<p>s
+<p>git remote -v<p>
 
 /*
 The workflow for Git collaborations typically follows this order:
