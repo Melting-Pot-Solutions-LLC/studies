@@ -1,67 +1,61 @@
 <h1> the most frequnelty used gut commmands are:<h1>
 
-<h3>to create a git a repository in an empty directory
-git init
+<h3>to create a git a repository in an empty directory:</h3>
+<p>git init</p>
 
-//tie the local repository to the remote repository
-git remote add origin https://...
+<h3>tie the local repository to the remote repository:</h3>
+<p>git remote add origin https://..</p>
 
-// add files or directories to the staging area
-git add filename.txt directory_name
+<h3>add files or directories to the staging area:</h3>
+<p>git add filename.txt directory_name</p>
 
-// see what is going to be commited
-git status
+<h3>see what is going to be commited:</h3>
+<p>git status</p>
 
-//after adding the files to the staging area we can change the files and see the difference bw the staging area and files we changed
-git diff
+<h3>after adding the files to the staging area we can change the files and see the difference bw the staging area and files we changed:</h3>
+<p>git diff</p>
 
-//commit changes to the local repository
-git commit -m "message"
+<h3>commit changes to the local repository:</h3>
+<p>git commit -m "message"<p>
 
-//see the history of commits
-git log
+<h3>see the history of commits</h3>
+<p>git log<p>
 
-//commit to the remote repository
-git push [origin master]
+<h3>commit to the remote repository:</h3>
+<p>git push [origin master]<p>
 
-//after git command
-//display everything the git log command displays for the HEAD commit, 
-//plus all the file changes that were committed.
-git show HEAD
+<h3>after git command display everything the git log command displays for the HEAD commit, plus all the file changes that were committed:</h3>
+<p>git show HEAD<p>
 
-//restore the file in your working directory to look exactly as it 
-//did when you last made a commit.
-git checkout HEAD filename
+<h3>restore the file in your working directory to look exactly as it did when you last made a commit:</h3>
+<p>git checkout HEAD filename<p>
 
-//resets the file in the staging area to be the same as the HEAD commit.
-//It does not discard file changes from the working directory, 
-//it just removes them from the staging area.
-git reset HEAD filename
+<h3>resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area:</h3>
+<p>git reset HEAD filename<p>
 
-//rewind to the part before you made the wrong turn and create a new 
-/destiny for the project. 
-git reset 5d69206
+<h3>rewind to the part before you made the wrong turn and create a new destiny for the project: </h3>
+<p>git reset 5d69206<p>
  
-//find out what branch you are on
-git branch
+<h3>find out what branch you are on:</h3>
+<p>git branch<p>
 
-//create a new branch but stay ont the previous one
-git branch branch_name
+<h3>create a new branch but stay ont the previous one:</h3>
+<p>git branch branch_name<p>
 
-//switch to new branch
-git checkout branch_name
+<h3>switch to new branch:</h3>
+<p>git checkout branch_name<p>
 
-//add changes from another branch to the current cbranch
-git merge new_branch
+<h3>//add changes from another branch to the current branch:</h3>
+<p>git merge new_branch<p>
 
-//delete a branch
-git branch -d branch_name
+<h3>//delete a branch:</h3>
+<p>git branch -d branch_name<p>
 
-//show all the branches
-git branch -a
+<h3>//show all the branches:</h3>
+<p>git branch -a<p>
 
-//find out informaiton about all remote   
-git remote -v
+<h3>//find out informaiton about all remote:<h3>
+<p>git remote -v<p>s
 
 /*
 The workflow for Git collaborations typically follows this order:
