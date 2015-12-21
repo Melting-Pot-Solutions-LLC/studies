@@ -43,7 +43,7 @@
 <code>git branch branch_name</code>
 
 <h3>switch to new branch:</h3>
-<code>git checkout branch_name<code>
+<code>git checkout branch_name</code>
 
 <h3>add changes from another branch to the current branch:</h3>
 <code>git merge new_branch</code>
