@@ -5,7 +5,7 @@
 <h3>3 ways to write for loops</h3>
 <ul>
 <li><code>
-for (var index = 0; index < context.length; index++)<br>
+for (var index = 0; index context.length; index++)<br>
 {<br>
 	//...<br>
 }<br>
