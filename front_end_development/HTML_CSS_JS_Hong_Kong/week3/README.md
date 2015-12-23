@@ -1,7 +1,7 @@
 <h1>WEEK 3 LECTURE NOTES</h1>
 
 
-<h2><u>FOR loops:</u></h2>
+<h2><u>FOR LOOPS</u></h2>
 <h3>3 ways to write for loops</h3>
 <ul>
 <li><code>
@@ -98,7 +98,7 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 </ul>
 
 
-<h2><u>DOM structure:</u></h2>
+<h2><u>DOM STRUCTURE</u></h2>
 <p>Document Object Model, each node in the DOm sctructure has the following properties</p>
 
 <ul>
