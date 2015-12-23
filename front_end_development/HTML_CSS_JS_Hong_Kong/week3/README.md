@@ -140,7 +140,7 @@ document.getElementsByTagName("h2")[0]
 document.getElementById("my_text").appendChild(result);</code></li>
 </ul>
 
-<p>How to delete a node:</p>
+<p>How to delete a node (with all the children):</p>
 <ul>
 <li>
 <code>this_node=getElementById("myPara");</code><br>
@@ -169,4 +169,14 @@ document.getElementById("my_text").appendChild(result);</code></li>
 <code>while (theNode.firstChild) theNode.removeChild(theNode.firstChild);</code><br>
 </li>
 </ul>
+
+<p>How to copy a node (without children):</p>
+<code>var the_node=document.getElementById("myList").lastChild;</code><br>
+<code> var the_clone=the_node.cloneNode();</code><br>
+<code>document.getElementById("myList").appendChild(the_clone);</code><br>
+
+<p>How to copy a node (with children):</p>
+<code>var the_node=document.getElementById("myList").lastChild;</code><br>
+<code> var the_clone=the_node.cloneNode(true);</code><br>
+<code>document.getElementById("myList").appendChild(the_clone);</code><br>
 
