@@ -180,3 +180,32 @@ document.getElementById("my_text").appendChild(result);</code></li>
 <code> var the_clone=the_node.cloneNode(true);</code><br>
 <code>document.getElementById("myList").appendChild(the_clone);</code><br>
 
+<h2><u>MOUSE EVENTS</u></h2>
+<h3></h3>
+<ul>
+<li><code>onclick </code> - when a user clicks on an object</li>
+<li><code>onmousedown</code> - when a person pushes and holds the mosue button </li>
+<li><code>onmouseup</code> - when a user unhilds the mouse  button</li>
+<li><code>onmouseover</code> - when a user navigates a mouse over an object</li>
+
+<li><code>onmouseout</code> - when a user moves the mouse out of an object</li>
+</ul>
+
+<p>Some examples:</p>
+<code>
+<html><body><script>
+    function change_colour( new_colour ) {
+      document.getElementById("myDiv")
+              .style.background=new_colour;
+}
+  </script>
+  <div id="myDiv"
+    style="position:absolute; background:yellow;
+    left:300; top:100; width:300; font­size:52pt"
+    onmouseover="change_colour('red');"
+    onmouseout="change_colour('yellow');">
+    Move your mouse over this ...
+    then move it out...
+  </div>
+</body></html>
+</code>
