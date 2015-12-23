@@ -91,8 +91,8 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 </li>
 
 <li>
-<code>var square = function(el) {return el*el;}</code>
-<code>var numbers = [1,2,3,4,5]</code>
+<code>var square = function(el) {return el*el;}</code><br>
+<code>var numbers = [1,2,3,4,5]</code><br>
 <code>var result = numbers.map(square);</code>
 </li>
 </ul>
