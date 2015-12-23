@@ -103,17 +103,31 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 
 <ul>
 <li><code>nodeName</code></li>
-
 <li><code>parentNode</code></li>
-
 <li><code>childNodes[]</code></li>
-
 <li><code>firstChild</code></li>
-
 <li><code>lastChild</code></li>
-
 <li><code>previousSibling</code></li>
-
 <li><code>lastSibling</code></li>
-
 </ul>
+
+<p>How can we locate an exact node in the DOM structure</p>
+<ul>
+<li>
+Use the exact path. But the DOM strutcture can be diffenrent depending on the browser <br>
+<code>document.childNodes[0].childNodes[2].childNodes[1]
+    .setAttribute("style", "color:red");</code>
+</li>
+<li>Get the element by the tag name. However, it is difficult to do if there are more than one element of the same type<br>
+<code>
+document.getElementsByTagName("h2")[0]
+.setAttribute("style", "color:yellow");
+</code>
+</li>
+<li>Find an element using its ID.<br>
+<code>  document.getElementById("cute_text")
+    .setAttribute("style", "color:blue");</code></li>
+</ul>
+
+
+
