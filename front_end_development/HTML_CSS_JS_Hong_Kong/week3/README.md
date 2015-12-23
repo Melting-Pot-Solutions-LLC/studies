@@ -5,10 +5,10 @@
 <h3>3 ways to write for loops</h3>
 <ul>
 <li><code>
-for (var index = 0; index < context.length; index++)
-{
-	//...
-}
+for (var index = 0; index < context.length; index++)<br>
+{<br>
+	//...<br>
+}<br>
 </code></li>
 <li><code>
 var person = {initials:"DR", age:40 job:"Salesperson"};
