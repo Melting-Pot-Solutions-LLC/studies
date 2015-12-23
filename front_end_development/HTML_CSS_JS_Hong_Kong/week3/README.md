@@ -129,14 +129,40 @@ document.getElementsByTagName("h2")[0]
     .setAttribute("style", "color:blue");</code></li>
 </ul>
 
-<p>How to create and add nodes:</p>
+<p>How to create nodes:</p>
 <ul>
 <li><code>newItem = document.createElement("hr");</code></li>
 <li><code>result = document.createTextNode("Hello");</code></li>
-<li><code>destParent = document.getElementsByTagName("body")[0];</code><br><code>
-destParent.insertBefore(newItem, destParent.firstChild);</code></li>
-
 </ul>
+<p>How to add nodes:</p>
+<ul>
+<li><code>result=document.createTextNode("This is dynamically added Text!");</code><br><code>
+document.getElementById("my_text").appendChild(result);</code></li>
+</ul>
+
+<p>How to delete a node:</p>
+<ul>
+<li>
+<code>this_node=getElementById("myPara");</code><br>
+<code>this_node.parentNode.removeChild(this_node);</code><br>
+</li>
+
+<li>
+<code>var the_node=document.getElementById("firstP");</code><br>
+<code>the_node.parentNode.removeChild(the_node);</code><br>
+</li>
+
+<li>
+<code>var the_node=document.getElementsByTagName("p")[0];</code><br>
+<code>the_node.parentNode.removeChild(the_node);</code><br>
+</li>
+
+<li>
+<code>var the_parent=document.getElementById("theBody");</code><br>
+<code>the_parent.removeChild(the_parent.firstChild);</code><br>
+</li>
+</ul>
+<p>How to delete all the children of a node:</p>
 
 
 
