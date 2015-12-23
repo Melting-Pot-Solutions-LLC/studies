@@ -181,7 +181,6 @@ document.getElementById("my_text").appendChild(result);</code></li>
 <code>document.getElementById("myList").appendChild(the_clone);</code><br>
 
 <h2><u>MOUSE EVENTS</u></h2>
-<h3></h3>
 <ul>
 <li><code>onclick </code> - when a user clicks on an object</li>
 <li><code>onmousedown</code> - when a person pushes and holds the mosue button </li>
@@ -196,3 +195,19 @@ document.getElementById("my_text").appendChild(result);</code></li>
 onmouseover="change_colour('red')";
 onmouseout="change_colour('yellow')";
 </code>
+
+<h2><u>TIMERS</u></h2>
+<p>How to create and start a timer which execute a function only once (after 1 second):</p>
+<code>var the_timer;</code><br>
+<code>the_timer=setTimeout(do_something, 1000);</code><br>
+
+
+<p>How to stop such timer:</p>
+<code>clearTimeout(the_timer);</code>
+
+<p>How to create and start a timer which execute the function repeeatedly over and over again:</p>
+<code>var the_timer;</code>
+<code>the_timer=setInterval(do_something, 2000);</code>
+
+<p>How to stop such timer:</p>
+<code>clearInterval(the_timer);</code>
