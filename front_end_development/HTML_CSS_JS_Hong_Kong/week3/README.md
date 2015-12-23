@@ -193,7 +193,7 @@ document.getElementById("my_text").appendChild(result);</code></li>
 
 <p>Some examples:</p>
 <code>
-<html><body><script>
+"<html><body><script>
     function change_colour( new_colour ) {
       document.getElementById("myDiv")
               .style.background=new_colour;
@@ -207,5 +207,5 @@ document.getElementById("my_text").appendChild(result);</code></li>
     Move your mouse over this ...
     then move it out...
   </div>
-</body></html>
+</body></html>"
 </code>
