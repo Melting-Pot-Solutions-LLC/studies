@@ -73,15 +73,15 @@ pets.splice(2, 0, "Rabbit"); //-> removes 0 elements starting from position 2, a
 pets.splice(1, 1, "Cat", "Fish"); //-> removes 1 elements starting from position 1, add "Cat", "Fish" and returns only removed elements -> []
 </code></li>
 
-<li>This code <br>
+<li>This code: <br>
 <code>
 for(var i = 0; i < pets.length; i++) {alert(pets[i]);}
 </code><br>
-can be replaced with this<br>
+can be replaced with this:<br>
 <code>
 pets.forEach(alert);
 </code><br>
-or<br>
+or this:<br>
 <code>
 var numbers = [1, 2, 3, 4, 5];
 </code><br>
