@@ -193,19 +193,11 @@ document.getElementById("my_text").appendChild(result);</code></li>
 
 <p>Some examples:</p>
 <code>
-"<html><body><script>
-    function change_colour( new_colour ) {
+function change_colour( new_colour ) {
       document.getElementById("myDiv")
-              .style.background=new_colour;
-}
-  </script>
-  <div id="myDiv"
-    style="position:absolute; background:yellow;
-    left:300; top:100; width:300; font­size:52pt"
+              .style.background=new_colour;}
+...
+
     onmouseover="change_colour('red');"
     onmouseout="change_colour('yellow');">
-    Move your mouse over this ...
-    then move it out...
-  </div>
-</body></html>"
 </code>
