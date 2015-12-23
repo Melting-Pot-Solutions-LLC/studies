@@ -81,7 +81,7 @@ can be replaced with this:<br>
 <code>
 pets.forEach(alert);
 </code><br>
-or this:<br>
+or this<br>
 <code>
 var numbers = [1, 2, 3, 4, 5];
 </code><br>
@@ -95,4 +95,25 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 <code>var numbers = [1,2,3,4,5]</code><br>
 <code>var result = numbers.map(square);</code>
 </li>
+</ul>
+
+
+<h2><u>DOM structure:</u></h2>
+<p>Document Object Model, each node in the DOm sctructure has the following properties</p>
+
+<ul>
+<li><code>nodeName</code></li>
+
+<li><code>parentNode</code></li>
+
+<li><code>childNodes[]</code></li>
+
+<li><code>firstChild</code></li>
+
+<li><code>lastChild</code></li>
+
+<li><code>previousSibling</code></li>
+
+<li><code>lastSibling</code></li>
+
 </ul>
