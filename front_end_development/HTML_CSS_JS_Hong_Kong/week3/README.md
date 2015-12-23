@@ -124,9 +124,18 @@ document.getElementsByTagName("h2")[0]
 .setAttribute("style", "color:yellow");
 </code>
 </li>
-<li>Find an element using its ID.<br>
+<li><b>BEST WAY: </b>Find an element using its ID.<br>
 <code>  document.getElementById("cute_text")
     .setAttribute("style", "color:blue");</code></li>
+</ul>
+
+<p>How to create and add nodes:</p>
+<ul>
+<li><code>newItem = document.createElement("hr");</code></li>
+<li><code>result = document.createTextNode("Hello");</code></li>
+<li><code>destParent = document.getElementsByTagName("body")[0];</code><br><code>
+destParent.insertBefore(newItem, destParent.firstChild);</code></li>
+
 </ul>
 
 
