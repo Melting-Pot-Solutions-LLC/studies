@@ -163,6 +163,10 @@ document.getElementById("my_text").appendChild(result);</code></li>
 </li>
 </ul>
 <p>How to delete all the children of a node:</p>
-
-
+<ul>
+<li>
+<code>var theNode = document.getElementById("theBody");</code><br>
+<code>while (theNode.firstChild) theNode.removeChild(theNode.firstChild);</code><br>
+</li>
+</ul>
 
