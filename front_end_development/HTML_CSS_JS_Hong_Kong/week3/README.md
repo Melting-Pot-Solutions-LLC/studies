@@ -211,3 +211,17 @@ onmouseout="change_colour('yellow')";
 
 <p>How to stop such timer:</p>
 <code>clearInterval(the_timer);</code>
+
+
+<h2><u>EVENTS</u></h2>
+<p>How to add an event handler:</p>
+<code>function do_something() { alert("Page has loaded") }</code>
+<code>window.onload = do_something;</code>
+
+<p>or</p>
+<code>function do_something() { alert("Page has loaded") }</code>
+<code>window.addEventListener("load", do_something);</code>
+
+<p>How to remove an event handler</p>
+<code>var theBody = document.getElementById("theBody");</code>
+<code>theBody.removeEventListener("load", do_something);</code>
