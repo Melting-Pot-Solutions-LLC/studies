@@ -99,7 +99,7 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 
 
 <h2><u>DOM STRUCTURE</u></h2>
-<p>Document Object Model, each node in the DOm sctructure has the following properties</p>
+<p>Document Object Model, each node in the DOM sctructure has the following properties</p>
 
 <ul>
 <li><code>nodeName</code></li>
