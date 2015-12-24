@@ -226,3 +226,24 @@ onmouseout="change_colour('yellow')";
 <p>How to remove an event handler</p>
 <code>var theBody = document.getElementById("theBody");</code><br>
 <code>theBody.removeEventListener("load", do_something);</code>
+
+<div align="center"><h2><u>ADVANCED FUNCTIONS USAGE</u></h2></div>
+<ul>
+<li>
+Assign a variabl to a funciton: <br>
+<code>var functionTwo = function function_name() {/* some code there */}</code><br>
+Such functions is defined when the browser reaches that point in the code.
+</li>
+
+<li>
+Pass a fuciton to a funciton <br>
+<code>result = myDivide(function_name, 44, 1);</code>
+</li>
+
+<li>
+Return a function form a function <br>
+<code>... return function() {count ++; alert(count);}</code>
+</li>
+
+</ul>
+
