@@ -1,4 +1,5 @@
 <div align="center"><h1>WEEK 3 LECTURE NOTES</h1></div>
+<hr>
 
 
 <h2><u>FOR LOOPS</u></h2>
