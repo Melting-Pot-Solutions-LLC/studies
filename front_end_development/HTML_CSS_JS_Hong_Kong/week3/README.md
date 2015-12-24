@@ -2,7 +2,7 @@
 <hr>
 
 
-<h2><u>FOR LOOPS</u></h2>
+<div align="center"><h2><u>FOR LOOPS</u></h2></div>
 <h3>3 ways to write for loops</h3>
 <ul>
 <li><code>
@@ -31,7 +31,7 @@ for (;;) // infinite loop
 </ul>
 
 
-<h2><u>ARRAYS</u></h2>
+<div align="center"><h2><u>ARRAYS</u></h2></div>
 <code>var pets = ["Dog", "Cat", "Rabbit", "Hamster"]</code>
 <ul>
 <li><code>
@@ -99,7 +99,7 @@ numbers.forEach(fuciton (elem, idx, arr) {arr[idx] = elem*elem});
 </ul>
 
 
-<h2><u>DOM STRUCTURE</u></h2>
+<div align="center"><h2><u>DOM STRUCTURE</u></h2></div>
 <p>Document Object Model, each node in the DOM sctructure has the following properties</p>
 
 <ul>
@@ -181,7 +181,7 @@ document.getElementById("my_text").appendChild(result);</code></li>
 <code> var the_clone=the_node.cloneNode(true);</code><br>
 <code>document.getElementById("myList").appendChild(the_clone);</code><br>
 
-<h2><u>MOUSE EVENTS</u></h2>
+<div align="center"><h2><u>MOUSE EVENTS</u></h2></div>
 <ul>
 <li><code>onclick </code> - when a user clicks on an object</li>
 <li><code>onmousedown</code> - when a person pushes and holds the mosue button </li>
@@ -197,13 +197,13 @@ onmouseover="change_colour('red')";
 onmouseout="change_colour('yellow')";
 </code>
 
-<h2><u>TIMERS</u></h2>
+<div align="center"><h2><u>TIMERS</u></h2></div>
 <p>How to create and start a timer which execute a function only once (after 1 second):</p>
 <code>var the_timer;</code><br>
 <code>the_timer=setTimeout(do_something, 1000);</code><br>
 
 
-<p>How to stop such timer:</p>
+<div align="center"><p>How to stop such timer:</p></div>
 <code>clearTimeout(the_timer);</code>
 
 <p>How to create and start a timer which execute the function repeeatedly over and over again:</p>
@@ -214,7 +214,7 @@ onmouseout="change_colour('yellow')";
 <code>clearInterval(the_timer);</code>
 
 
-<h2><u>EVENTS</u></h2>
+<div align="center"><h2><u>EVENTS</u></h2></div>
 <p>How to add an event handler:</p>
 <code>function do_something() { alert("Page has loaded") }</code><br>
 <code>window.onload = do_something;</code>
