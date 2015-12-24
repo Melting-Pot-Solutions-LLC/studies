@@ -1,4 +1,4 @@
-<h1>WEEK 3 LECTURE NOTES</h1>
+<h1><center>WEEK 3 LECTURE NOTES</center></h1>
 
 
 <h2><u>FOR LOOPS</u></h2>
@@ -215,13 +215,13 @@ onmouseout="change_colour('yellow')";
 
 <h2><u>EVENTS</u></h2>
 <p>How to add an event handler:</p>
-<code>function do_something() { alert("Page has loaded") }</code>
+<code>function do_something() { alert("Page has loaded") }</code><br>
 <code>window.onload = do_something;</code>
 
 <p>or</p>
-<code>function do_something() { alert("Page has loaded") }</code>
+<code>function do_something() { alert("Page has loaded") }</code><br>
 <code>window.addEventListener("load", do_something);</code>
 
 <p>How to remove an event handler</p>
-<code>var theBody = document.getElementById("theBody");</code>
+<code>var theBody = document.getElementById("theBody");</code><br>
 <code>theBody.removeEventListener("load", do_something);</code>
