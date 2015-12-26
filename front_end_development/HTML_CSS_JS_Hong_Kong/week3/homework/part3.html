@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+	<title>Matching Game</title>
+
+	<style>
+		div{position:absolute; width:500px; height:500px}
+		img{position:absolute;}
+		#rightSide{left: 500px; border-left: 1px solid black;}
+
+	</style>
+
+
+	<script>
+		var numberOfFaces = 5;
+		
+		//generate smiles at a randomg positions
+		function generateFaces()
+		{
+			for(var i = 0; i < numberOfFaces; i++)
+			{
+				//acquire the left part of the pag
+				var theLeftSide = document.getElementById("leftSide");
+
+				//create an image
+				var newItem = document.createElement("img");
+
+				//generate random numbers
+				var x_position = Math.floor(Math.random()*400);
+				var y_position = Math.floor(Math.random()*400);
+
+				//define a source
+				newItem.src = "smile.png";
+				newItem.style.top = String(y_position) + "px";
+				newItem.style.left = String(x_position) + "px";
+
+				//append to a left side
+				theLeftSide.appendChild(newItem);
+
+				
+			}
+
+			//acquire teh rightside
+			var theRightSide = document.getElementById("rightSide");
+
+			//clone all the images
+			var leftSideImages = theLeftSide.cloneNode(true);
+
+			//remve the last smile
+			leftSideImages.removeChild(leftSideImages.lastChild);
+
+			//append the images to the right div
+			theRightSide.appendChild(leftSideImages);
+
+		}
+	</script>
+</head>
+
+
+
+<body onload="generateFaces()">
+
+<h1>Matching Game</h1>
+<p> Click on the extra smiling face on the left.</p>
+
+<div id="leftSide"></div> 
+
+<div id="rightSide"></div> 
+
+</body>
+
+
+
+</html>

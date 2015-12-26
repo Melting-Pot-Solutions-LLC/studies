@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+	<title>Matching Game</title>
+
+	<style>
+		div{position:absolute; width:500px; height:500px}
+		img{position:absolute;}
+		#rightSide{left: 500px; border-left: 1px solid black;}
+
+	</style>
+
+
+	<script>
+		var numberOfFaces = 5;
+		
+		//generate smiles at a randomg positions
+		function generateFaces()
+		{
+			for(var i = 0; i < numberOfFaces; i++)
+			{
+				//acquire the left part of the page
+				var theLeftSide = document.getElementById("leftSide");
+
+				//create an image
+				var newItem = document.createElement("img");
+
+				//generate random numbers
+				var x_position = Math.floor(Math.random()*400);
+				var y_position = Math.floor(Math.random()*400);
+
+				//define a source
+				newItem.src = "smile.png";
+				newItem.style.top = String(y_position) + "px";
+				newItem.style.left = String(x_position) + "px";
+
+				//append to a left side
+				theLeftSide.appendChild(newItem);
+			}
+
+			//acquire the rightside
+			var theRightSide = document.getElementById("rightSide");
+
+			//clone all the images
+			var leftSideImages = theLeftSide.cloneNode(true);
+
+			//remove the last smile
+			leftSideImages.removeChild(leftSideImages.lastChild);
+
+			//append the images to the right div
+			theRightSide.appendChild(leftSideImages);
+
+			var theBody = document.getElementsByTagName("body")[0];
+
+			//left click on the left side
+			theLeftSide.lastChild.onclick = function go_to_next_level()
+			{
+				event.stopPropagation();
+				numberOfFaces += 5;
+
+				//delete all the nodes on the left
+				while (theLeftSide.firstChild)
+					theLeftSide.removeChild(theLeftSide.firstChild);
+
+				//delete all the nodes on the right
+				while (theRightSide.firstChild)
+					theRightSide.removeChild(theRightSide.firstChild);
+
+				//generate the smiles again
+				generateFaces();
+			}
+
+
+			//left click anywhere except from the correct answer
+			theBody.onclick = function game_over()
+			{
+				event.stopPropagation();
+				alert("Game is over!");
+
+				//disable clicks on the body and on the correct smile
+				theBody.onclick = null;
+				theLeftSide.onclick = null;
+			}
+
+		}
+
+	</script>
+</head>
+
+
+
+<body onload="generateFaces()">
+
+<h1>Matching Game</h1>
+<p> Click on the extra smiling face on the left.</p>
+
+<div id="leftSide"></div> 
+
+<div id="rightSide"></div> 
+
+</body>
+
+
+
+</html>
