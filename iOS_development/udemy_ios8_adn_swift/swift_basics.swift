@@ -32,6 +32,9 @@ var arr = [1, 2, 3, 4, 5, 6, 7]
 //indexing starts with 0
 arr[0]
 
+//to find array size
+var index = arr.count
+
 //append an element at the end of an array
 arr.append(8)
 
@@ -88,6 +91,45 @@ else
     print("oh, shit!")
 }
 
+
 //generate a randmo number
 var random_number = arc4random_uniform(4)
+
+//for loop
+for var i = 0; i < 10; i++
+{
+    //print(i)
+    //print("\n")
+}
+
+print("\n")
+//iterate over an array
+var arr2 = [2, 3, 4, 5, 7, 16, 7, 3]
+for x in arr2
+{
+    //print(x)
+}
+
+//mutate an array
+for (index, element) in arr2.enumerate()
+{
+    arr2[index] = element + 2
+}
+
+//while loop
+var i = 1
+while (i < 10)
+{
+    print(i)
+    i++
+}
+
+//practice
+var arr2_size = arr2.count
+i = 0
+while (i < arr2_size)
+{
+    arr2[i] = arr2[i] - 1
+    i++
+}
 
