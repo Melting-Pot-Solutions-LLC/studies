@@ -87,3 +87,7 @@ else
 {
     print("oh, shit!")
 }
+
+//generate a randmo number
+var random_number = arc4random_uniform(4)
+
