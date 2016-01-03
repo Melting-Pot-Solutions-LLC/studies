@@ -1,0 +1,47 @@
+
+<!-- saved from url=(0121)https://s3.amazonaws.com/coursera-uploads/peer-review/LgWwihnoEeWDtQoum3sFeQ/a84a9dd6a0094d8ac36b85942cd49199/part_1.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title> HW2 </title>
+<style type="text/css"></style>
+</head>
+<body onload="do_game()">
+<script>
+var colors = ["Aqua", "Black", "Cyan", "White", "Blue", 
+			"Green", "Yellow", "DarkBlue", "Lime", "Olive",
+			"Pink", "Silver", "Purple"];
+var length_of_array = 13;
+
+
+function check_guess()
+{
+
+}
+
+
+function do_game()
+{
+	colors.sort();
+	var random_number = Math.floor(Math.random()*(length_of_array-1));
+	console.log("number is " + random_number);
+	var sought_color = colors[random_number];
+	var number_of_guesses = 0;
+
+	var guess = false;
+
+	alert("The color I am going to think about is " + sought_color);
+	while (guess == false)
+	{
+		var input_guess = prompt("I am thinking of one of these colors:\n\n" + colors.join(", ") + "\n\nWhat color am I thinking of?");
+		number_of_guesses++;
+		if(input_guess.toUpperCase() == sought_color.toUpperCase())
+		{
+			break;
+		}
+	}
+	console.log("number of guesses is " + String(number_of_guesses);
+}
+</script>
+</body>
+</html>
