@@ -1,0 +1,46 @@
+//
+//  ViewController.swift
+//  table_views
+//
+//  Created by Apple on 1/12/16.
+//  Copyright © 2016 hello_world. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UITableViewDelegate {
+    
+    var cell_content = ["Rob", "Kirsten", "Tommy", "Angelina"]
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return cell_content.count
+    }
+    
+    
+    //func tableView( defines what will be in the cell itself
+    //indexPath tells you where in the table you are on
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        //reuseIdentifier defines the way a prototype cell is called by
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        cell.textLabel?.text = cell_content[indexPath.row]
+        
+        return cell
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
