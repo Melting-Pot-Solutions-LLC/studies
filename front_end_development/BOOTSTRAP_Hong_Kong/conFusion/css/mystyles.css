@@ -4,6 +4,14 @@
 	padding:0px auto;
 }
 
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
 .row-content
 {
 	margin: 0px auto;
