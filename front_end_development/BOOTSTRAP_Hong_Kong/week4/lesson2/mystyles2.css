@@ -1,0 +1,81 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AFAFAF;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9786CB;
+  color: florawhite;
+}
+.carousel {
+  background: #1A237E;
+}
+.carousel .item {
+  height: 300px;
+}
+.carousel .item img {
+  left: 0px;
+  min-height: 300px;
+  position: absolute;
+  top: 0px;
+}
+address {
+  color: #0F0F0F;
+  font-size: 80px;
+  margin: 0px;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+.navbar-inverse {
+  background: #303F9F;
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background: #1A237E;
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #1A237E;
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #1A237E;
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  background: #1A237E;
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #1A237E;
+  color: #FFFFFF;
+}
