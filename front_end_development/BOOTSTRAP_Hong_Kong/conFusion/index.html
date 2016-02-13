@@ -77,8 +77,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a data-toggle="modal" data-target="#loginModal">
-                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        <a id="login_button">
+                        <span class="glyphicon glyphicon-log-in" ></span> Login</a>
                     </li>
                 </ul>
 
@@ -230,7 +230,7 @@
                 		<div >
 	            		<p style="padding:20px"></p>
 	            	
-	            		<a type="button" class="btn btn-warning btn-block" href="#reservation" data-toggle="modal" data-target="#reserveTableModal">Reserve table</a>
+	            		<a type="button" class="btn btn-warning btn-block" href="#reservation" id="reserve_table_modal">Reserve table</a>
 
 	                	</div>
 
@@ -455,9 +455,23 @@
 
     <script>
         $(document).ready(function()
-            {
+        {
                 $('[data-toggle="tooltip"]').tooltip();
-            });
+        });
+
+		$(document).ready(function()
+		{
+		    $("#reserve_table_modal").click(function(){
+		        $("#reserveTableModal").modal();
+		    });
+		});
+
+		$(document).ready(function()
+		{
+		    $("#login_button").click(function(){
+		        $("#loginModal").modal();
+		    });
+		});
 
         
     </script>
