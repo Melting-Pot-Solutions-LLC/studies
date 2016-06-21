@@ -69,6 +69,46 @@
 <code>git remote -v</code>
 
 
-<h1>YouTube <a href="https://www.youtube.com/channel/UCLwG2LUXE5-o5q-8uvlV1ig">classp</a> on git</h1>
+<h1>YouTube <a href="https://www.youtube.com/channel/UCLwG2LUXE5-o5q-8uvlV1ig">class</a> on git</h1>
+
+<h2>Edit .gitignore</h2>
+
+<h3>ignore folders</h3>
+<code>logs/</code>
+
+<h3>ignore particular files in a folder</h3>
+<code>logs/*.txt</code>
+
+<h3>show which files/folders are chagned but not commited</h3>
+<code>git status</code>
+
+<h3>show which files (only files, not folders) are chagned but not commited </h3>
+<code>git status --untracked-files=all</code>
+
+<h3><b>ALWAYS RUN GIT STATUS</b></h3>
+
+<h3>recursively add all files in the current folder</h3>
+<code>git add .</code>
+
+<h3>commit added files</h3>
+<code>git commit -m "comment"</code>
+
+<h3>commit all files (added, and ones were changed but not added)</h3>
+<code>git commit -a -m "comment"</code>
+
+<h3><b>if a file was modified incorrectly, get back to last indexed version</b></h3>
+<code>git checkout file.txt</code>
+
+<h3>changing logs</h3>
+<code>git log</code>
+
+<h3>changing logs (formatted version)</h3>
+<code>git log --pretty=format:" %h - %an, %ar: %s"</code>
+<p>%h - last 8 letters of a commit; %an - author; %ar - time, %s - comment</p>
+
+<h3>show commits within last 2 weeks</h3>
+<code>git log --since=2.weeks</code>
 
 
+<h3>show changes along with the commits</h3>
+<code>git log -p -2</code>
