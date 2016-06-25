@@ -132,3 +132,16 @@
 
 <h3>run merge problems resolution tool</h3>
 <code>git mergetool</code>
+
+<h3>run merge problems resolution tool</h3>
+<code>git mergetool</code>
+
+<h2>Seeing difference between stages</h2>
+<h3>see difference between commited and added</h3>
+<code>git diff --cached</code>
+
+<h3>see difference between added and working directory</h3>
+<code>git diff </code>
+
+<h3>see difference between commited and working directory</h3>
+<code>git diff HEAD</code>
