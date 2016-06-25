@@ -68,4 +68,22 @@
 <h3>find out informaiton about all remote:</h3>
 <code>git remote -v</code>
 
+<h2>Branhces</h2>
+<h3>create a new branch and switchto it:</h3>
+<code>git checkout -b new_branch_name</code>
 
+<h3>create a new branch, but do not switch to it:</h3>
+<code>git branch new_branch_name</code>
+
+<h3>switch to an existing branch:</h3>
+<code>git checkout existing_branch_name </code>
+
+<h2>Merging branches</h2>
+<h3>set up the merge conflict resolving tool to use (kdiff3)</h3>
+<code>git config --global merge.tool kdiff3 </code>
+
+<h3>merge some_branch to your currecnt branch</h3>
+<code>git merge some_branch</code>
+
+<h3>run merge problems resolution tool</h3>
+<code>git mergetool</code>
