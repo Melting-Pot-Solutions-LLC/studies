@@ -54,3 +54,7 @@ string_input_list = []
 for x in raw_input().split(' '):
     string_input_list.append(x)
 print string_input_list
+
+#list comprehension
+ListOfThreeMultiples = [x for x in range(10) if x % 3 == 0] # Multiples of 3 below 10
+#print(ListOfThreeMultiples) -> [0, 3, 6, 9]
